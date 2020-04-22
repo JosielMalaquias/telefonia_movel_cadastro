@@ -1,0 +1,141 @@
+<aside *ngIf="auth.isLoggedIn()" class="main-sidebar sidebar-dark-primary elevation-4">
+  <!--<a routerLink="/" class="brand-link logo-switch">
+    <h4 class="brand-image-xl logo-xs"><i class="fas fa-grip-vertical"></i>PT</h4>
+    <h4 class="brand-image-xs logo-xl"style="left: 12px"><i class="fas fa-grip-vertical"></i>Portal Telefonia</h4>
+  </a>-->
+
+  <a href="#" class="brand-link">
+
+         <i class="fas fa-project-diagram" style="opacity: .8; padding-left: 12px;"></i>
+    <span class="brand-text font-weight-light"> Portal Telefonia</span>
+  </a>
+
+  <div class="sidebar">
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar nav-child-indent flex-column" data-widget="treeview" role="menu">
+          <li class="nav-item ">
+            <a routerLink="/home" routerLinkActive="active" class="nav-link">
+              <i class="nav-icon fas fa-home"></i>
+              <p>Pagina Inicial</p>
+            </a>            
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>Cadastro <i class="right fas fa-angle-left"></i></p>
+            </a>
+              <ul class="nav nav-treeview">      
+                <li class="nav-item">
+                  <a routerLink="/cadastro/novo-cadastro" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Novo Cadastro</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/cadastro/todos-cadastro" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Alterar Cadastro</p>
+                  </a>
+                </li>    
+              </ul>           
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-boxes"></i>
+              <p>Estoque <i class="right fas fa-angle-left"></i></p>
+            </a>
+              <ul class="nav nav-treeview">      
+                <li class="nav-item">
+                  <a routerLink="/" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Novo Aparelho</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Novo Chip</p>
+                  </a>
+                </li> 
+                <li class="nav-item">
+                  <a routerLink="/" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Movimentação</p>
+                  </a>
+                </li> 
+              </ul>           
+          </li>       
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-cogs"></i>
+              <p>Backup <i class="right fas fa-angle-left"></i></p>
+            </a>
+              <ul class="nav nav-treeview">      
+                <li class="nav-item">
+                  <a routerLink="/" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Cadastrar Backup</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Movimentação</p>
+                  </a>
+                </li> 
+              </ul>           
+          </li>          
+          <li class="nav-item has-treeview">
+            <a href="#"class="nav-link">
+              <i class="nav-icon far fa-file-alt"></i>
+              <p>Catálogos <i class="right fas fa-angle-left"></i></p>
+            </a>
+              <ul class="nav nav-treeview">      
+                <li class="nav-item">
+                  <a routerLink="/catalogos/empresas" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Empresas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/catalogos/fornecedores" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Fornecedores</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/catalogos/contas" routerLinkActive="active"  class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/catalogos/recursos" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Recursos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/catalogos/homologados" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Homologados</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/catalogos/unidades" routerLinkActive="active" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Unidades</p>
+                  </a>
+                </li>
+              </ul>           
+          </li>        
+          <li class="nav-item  ">          
+            <a routerLink="/he" routerLinkActive="active" class="nav-link ">
+              <i class="nav-icon fas fa-user-cog"></i>
+              <p>Config User</p>
+            </a>
+          </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
