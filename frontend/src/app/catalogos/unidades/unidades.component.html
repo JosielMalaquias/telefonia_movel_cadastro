@@ -1,0 +1,127 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+          <div class="col-12 col-sm-6 col-lg-12">
+            <div class="card card-primary card-outline card-outline-tabs">
+              <div class="card-header p-0 border-bottom-0">
+                <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-three-form-tab" data-toggle="pill" href="#custom-tabs-three-form" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true"><i class="fas fa-plus-circle"></i> Novo Registro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-three-table-tab" data-toggle="pill" href="#custom-tabs-three-table" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false"><i class="fas fa-table"></i> Cadastrados</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="custom-tabs-three-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-three-form" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="row">
+                      <div class="col-md-6">
+                      <div class="card card-light">
+                        <div class="card-header">
+                          <h3 class="card-title">Cadastro Unidade</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form class="form-horizontal">
+                          <div class="card-body">
+                            <div class="form-group row">
+                              <label for="uni_nome" class="col-sm-4 col-form-label">Unidade</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="uni_nome" placeholder="">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="uni_logradouro" class="col-sm-4 col-form-label">Endereço</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="uni_logradouro">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="uni_cep" class="col-sm-4 col-form-label">CEP</label>
+                              <div class="col-sm-4">
+                                <input type="text" class="form-control" id="uni_cep" data-inputmask='"mask": "99999-99"' data-mask>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="uni_bairro" class="col-sm-4 col-form-label">Bairro</label>
+                              <div class="col-sm-4">
+                                <input type="text" class="form-control" id="uni_bairro">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="uni_cidade" class="col-sm-4 col-form-label">Cidade</label>
+                              <div class="col-sm-4">
+                                <input type="text" class="form-control" id="uni_cidade">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="uni_estado" class="col-sm-4 col-form-label">Unidade Matriz</label>
+                              <div class="col-sm-4">
+                                <select class="form-control select2bs4 select2" id="uni_estado" style="width: 100%;">
+                                  <option value="AC">Acre</option>
+                                  <option value="AL">Alagoas</option>
+                                  <option value="AP">Amapá</option>
+                                  <option value="AM">Amazonas</option>
+                                  <option value="BA">Bahia</option>
+                                  <option value="CE">Ceará</option>
+                                  <option value="DF">Distrito Federal</option>
+                                  <option value="ES">Espírito Santo</option>
+                                  <option value="GO">Goiás</option>
+                                  <option value="MA">Maranhão</option>
+                                  <option value="MT">Mato Grosso</option>
+                                  <option value="MS">Mato Grosso do Sul</option>
+                                  <option value="MG">Minas Gerais</option>
+                                  <option value="PA">Pará</option>
+                                  <option value="PB">Paraíba</option>
+                                  <option value="PR">Paraná</option>
+                                  <option value="PE">Pernambuco</option>
+                                  <option value="PI">Piauí</option>
+                                  <option value="RJ">Rio de Janeiro</option>
+                                  <option value="RN">Rio Grande do Norte</option>
+                                  <option value="RS">Rio Grande do Sul</option>
+                                  <option value="RO">Rondônia</option>
+                                  <option value="RR">Roraima</option>
+                                  <option value="SC">Santa Catarina</option>
+                                  <option value="SP">São Paulo</option>
+                                  <option value="SE">Sergipe</option>
+                                  <option value="TO">Tocantins</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-info float-right" style="margin-left:10px">Salvar</button>
+                            <button type="submit" class="btn btn-default float-right" style="margin-left:10px">Limpar</button>
+                          </div>
+                          <!-- /.card-footer -->
+                        </form>
+                      </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-three-table" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+                    <table datatable [dtOptions]="dtOptions" class="table table-bordered table-hover"></table>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>

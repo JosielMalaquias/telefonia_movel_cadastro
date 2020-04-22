@@ -1,0 +1,15 @@
+<div class="wrapper">
+
+  <app-login *ngIf="!auth.isLoggedIn()"></app-login>
+
+<div *ngIf="auth.isLoggedIn()">
+  <app-navbar></app-navbar>
+  <app-sidebar></app-sidebar>
+  <div class="content-wrapper px-4 py-2" style="min-height: 513px;">
+    <app-breadcrump></app-breadcrump>
+    <div class="content px-1">
+        <router-outlet></router-outlet>
+    </div>
+    <div id="sidebar-overlay"></div>
+  </div>
+</div>
