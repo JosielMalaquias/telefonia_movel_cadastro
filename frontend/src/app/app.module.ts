@@ -28,6 +28,17 @@ import { BreadcrumpComponent } from './components/breadcrump/breadcrump.componen
 import { DataTablesModule } from 'angular-datatables';
 import { NovoCadastroComponent } from './controle-cadastro/novo-cadastro/novo-cadastro.component';
 import { TodosCadastroComponent } from './controle-cadastro/todos-cadastro/todos-cadastro.component';
+import { TrocaDddComponent } from './controle-cadastro/troca-ddd/troca-ddd.component';
+import { ControleEstoqueComponent } from './controle-estoque/controle-estoque.component';
+import { AparelhoComponent } from './controle-estoque/aparelho/aparelho.component';
+import { ChipComponent } from './controle-estoque/chip/chip.component';
+import { DashboardComponent } from './controle-estoque/dashboard/dashboard.component';
+import { ControleBackupComponent } from './controle-backup/controle-backup.component';
+import { CadastroBackupComponent } from './controle-backup/cadastro-backup/cadastro-backup.component';
+import { DescarteBackupComponent } from './controle-backup/descarte-backup/descarte-backup.component';
+import { ProjetosComponent } from './catalogos/projetos/projetos.component';
+import { OperadorasComponent } from './catalogos/operadoras/operadoras.component';
+import { LinhaComponent } from './controle-estoque/linha/linha.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +61,18 @@ import { TodosCadastroComponent } from './controle-cadastro/todos-cadastro/todos
     CatalogosComponent,
     BreadcrumpComponent,
     NovoCadastroComponent,
-    TodosCadastroComponent
+    TodosCadastroComponent,
+    TrocaDddComponent,
+    ControleEstoqueComponent,
+    AparelhoComponent,
+    ChipComponent,
+    DashboardComponent,
+    ControleBackupComponent,
+    CadastroBackupComponent,
+    DescarteBackupComponent,
+    ProjetosComponent,
+    OperadorasComponent,
+    LinhaComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@
                     <a class="nav-link active" id="custom-tabs-three-form-tab" data-toggle="pill" href="#custom-tabs-three-form" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true"><i class="fas fa-plus-circle"></i> Novo Registro</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-three-table-tab" data-toggle="pill" href="#custom-tabs-three-table" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false"><i class="fas fa-table"></i> Cadastrados</a>
+                    <a class="nav-link" id="custom-tabs-three-table-tab" data-toggle="pill" href="#custom-tabs-three-table" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false"><i class="fas fa-table"></i> Pesquisa</a>
                   </li>
                 </ul>
               </div>
@@ -49,6 +49,12 @@
                               </div>
                             </div>
                             <div class="form-group row">
+                              <label for="cad_chamado" class="col-sm-4 col-form-label">Chamado</label>
+                              <div class="col-sm-3">
+                                <input type="text" class="form-control" id="cad_chamado" placeholder="">
+                              </div>
+                            </div>
+                            <div class="form-group row">
                               <label for="cad_linha" class="col-sm-4 col-form-label">Linha</label>
                               <div class="col-sm-8">
                                 <input type="text" class="form-control" id="cad_linha" data-inputmask='"mask": "(99) 99999-9999"' data-mask>
@@ -81,6 +87,12 @@
                                 <select class="form-control select2bs4 select2" id="cad_projeto" style="width: 100%;">
                                   <option></option>
                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="cad_cargo" class="col-sm-4 col-form-label">Observação</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="cad_cargo" rows="3"></textarea>
                               </div>
                             </div>
                           </div>
@@ -131,7 +143,7 @@
                             
 
 
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="col-12 col-sm-12 col-lg-12">
                               <div class="card card-primary card-outline card-outline-tabs">
                                 <div class="card-header p-0 border-bottom-0">
                                   <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
@@ -146,11 +158,35 @@
                                 <div class="card-body">
                                   <div class="tab-content" id="custom-tabs-three-tabContent">
                                     <div class="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
-                                      
+                                       <div class="form-group">
+                                        <label>Período Empréstimo</label>
+                      
+                                        <div class="input-group">
+                                          <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                              <i class="far fa-calendar-alt"></i>
+                                            </span>
+                                          </div>
+                                          <input type="text" class="form-control float-right" id="reservation">
+                                        </div>
+                                        <!-- /.input group -->
+                                      </div>
+
                                     </div>
                                     <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
                                       
-                                    
+                                      <div class="form-group row">
+                                        <label for="cad_reqps" class="col-sm-4 col-form-label">REPS</label>
+                                        <div class="col-sm-3">
+                                          <input type="text" class="form-control" id="cad_reqps" placeholder="">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label for="cad_cargo" class="col-sm-4 col-form-label">Cargo</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="cad_cargo" placeholder="">
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>

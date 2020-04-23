@@ -1,0 +1,95 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+          <div class="col-12 col-sm-6 col-lg-12">
+            <div class="card card-primary card-outline card-outline-tabs">
+              <div class="card-header p-0 border-bottom-0">
+                <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-three-form-tab" data-toggle="pill" href="#custom-tabs-three-form" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true"><i class="fas fa-tablet-alt"></i> Novo Backup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-three-table-tab" data-toggle="pill" href="#custom-tabs-three-table" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false"><i class="fas fa-search"></i> Pesquisa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="custom-tabs-three-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-three-form" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="row">
+                      <div class="col-md-6">
+                      <div class="card card-light">
+                        <div class="card-header">
+                          <h3 class="card-title"><i class="fas fa-tablet-alt"></i> Cadastro Backup</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form class="form-horizontal">
+                          <div class="card-body">
+                            <div class="form-group row">
+                              <label for="aparelho_unidade" class="col-sm-4 col-form-label">Unidade</label>
+                              <div class="col-sm-8">
+                                <select class="form-control select2bs4 select2" id="aparelho_unidade" style="width: 100%;">
+                                  <option></option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="aparelho_marca" class="col-sm-4 col-form-label">Marca</label>
+                              <div class="col-sm-8">
+                                <select class="form-control select2bs4 select2" id="aparelho_marca" style="width: 100%;">
+                                  <option>Apple</option>
+                                  <option>Samsung</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="aparelho_modelo" class="col-sm-4 col-form-label">Modelo</label>
+                              <div class="col-sm-8">
+                                <select class="form-control select2bs4 select2" id="aparelho_modelo" style="width: 100%;">
+                                  <option></option>
+                                </select>
+                              </div>
+                            </div> 
+                            <div class="form-group row">
+                              <label for="aparelho_imei" class="col-sm-4 col-form-label">Imei's</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="aparelho_imei" rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-info float-right" style="margin-left:10px">Salvar</button>
+                            <button type="submit" class="btn btn-default float-right" style="margin-left:10px">Limpar</button>
+                          </div>
+                          <!-- /.card-footer -->
+                        </form>
+                      </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-three-table" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+                    <table datatable [dtOptions]="dtOptions" class="table table-bordered table-hover"></table>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>

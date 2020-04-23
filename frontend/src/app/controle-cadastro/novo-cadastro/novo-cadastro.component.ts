@@ -13,6 +13,7 @@ export class NovoCadastroComponent implements OnInit {
 
   ngOnInit(): void {
 
+    $('#reservation').daterangepicker()
         //Initialize Select2 Elements
         $('.select2').select2()
         //Initialize Select2 Elements
@@ -26,13 +27,25 @@ export class NovoCadastroComponent implements OnInit {
       columns: [{
         title: 'ID'
       }, {
-        title: 'Razão Social'
+        title: 'Linha'
       }, {
-        title: 'Nome Fantasia'
+        title: 'Nome'
       },{
-        title: 'CNPJ'
+        title: 'Matrícula'
       },      {
-        title: 'Unidade Matriz'
+        title: 'Conta'
+      }
+      ,      {
+        title: 'Empresa'
+      }
+      ,      {
+        title: 'Modelo'
+      }
+      ,      {
+        title: 'Imei'
+      }
+      ,      {
+        title: 'Observação'
       }],
       // Declare the use of the extension in the dom parameter
       dom: 'Bfrtip',
